@@ -1,0 +1,108 @@
+@import url(https://fonts.google.com/specimen/Figtree?query=figtree&selection.family=Figtree:wght@500;800);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Gray-500: hsl(0, 0%, 42%);
+    --Gray-950: hsl(0, 0%, 7%);
+}
+
+html{
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Figtree', sans-serif;
+    font-size: clamp(0.875rem, 1rem, 1rem);
+    background-color: var(--Yellow);
+    color: var(--White);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    padding: 1rem;
+}
+.container {
+    background-color: var(--White);
+    border-radius: 20px;
+    max-width: 370px;
+    overflow: hidden;
+    box-shadow: 6px 6px 0px 1px rgba(0, 0, 0, 1);
+    color: var(--Gray-950);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 20px;
+}
+.image-section {
+    width: 100%;
+    height: auto;
+    border-radius: 1px;
+}
+.image-section img {
+    width: 100%;
+    display: block;
+    border-radius: 15px;
+    object-fit: scale-down;
+}
+.content-section h5 {
+    margin: 0 0 0.6rem 0;
+    font-weight: 800;
+    color: var(--Gray-950);
+    width: fit-content;
+    background-color: var(--Yellow);
+    padding: 0.2rem 0.8rem 0.2rem 0.8rem;
+    border-radius: 5px;
+}
+.content-section h3 {
+    margin: 1rem 0 1rem 0;
+    font-weight: 800;
+}
+.content-section {
+    line-height: 1.5;
+    padding: 0.5rem;
+}
+.content-section h3:hover {
+    color: var(--Yellow);
+    cursor: pointer;
+}
+
+.author-info {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+    margin-left: 0;
+    position: relative;
+    font-weight: bold;
+}
+.author-info img{
+    object-fit: contain;
+    block-size: 30px;
+/*box-shadow:1px 1px 3px 1px rgba(0, 0, 0, 1);*/
+    border-radius: 45px;
+}
+footer {
+    font-size: 0.75rem;
+    text-align: center;
+    margin-top: 1rem;
+    color: var(--Gray-500);
+    position: fixed;
+    bottom: 0;
+}
+footer a {
+    color: var(--Gray-500);
+    text-decoration: none;
+    font-weight: bold;
+}
+footer a:hover {
+    color: var(--Gray-950);
+    text-decoration: underline;
+}
