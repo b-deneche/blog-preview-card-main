@@ -20,7 +20,7 @@
 }
 
 html{
-    font-size: clamp(0.875rem, 1rem, 1rem);
+    font-size: clamp(0.7rem, 1rem, 1rem);
 }
 
 body {
@@ -55,10 +55,12 @@ body {
 }
 .image-section img {
     width: 100%;
-    display: block;
+    display: flex;
     border-radius: 15px;
-    object-fit: scale-down;
+    object-fit: hidden;
+    height: auto;
 }
+    
 .content-section h5 {
     margin: 0 0 0.6rem 0;
     font-weight: 800;
@@ -121,4 +123,15 @@ footer a {
 footer a:hover {
     color: var(--Gray-950);
     text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .container {
+        max-width: 100%;
+        padding: 15px;
+    }
+    .image-section {
+    overflow: hidden;
+    border-radius: 15px;
+    }
 }
