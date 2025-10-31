@@ -51,7 +51,8 @@ body {
 .image-section {
     width: 100%;
     height: auto;
-    border-radius: 1px;
+    border-radius: 15px;
+    overflow: hidden;
 }
 .image-section img {
     width: 100%;
@@ -125,7 +126,7 @@ footer a:hover {
     text-decoration: underline;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 375px) {
     .container {
         max-width: 100%;
         padding: 15px;
